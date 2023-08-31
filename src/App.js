@@ -1,11 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 
+function Message() {
+  return (
+    <div>
+      <p>{"It's time to learn React!!!"}</p>
+    </div>
+  );
+};
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Message/>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
