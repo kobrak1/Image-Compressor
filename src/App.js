@@ -23,6 +23,9 @@ class Welcome extends React.Component {
   }
 }
 
+Welcome.defaulNameProp = {
+  name : 'Burak',
+};
 
 function App() {
   return (
