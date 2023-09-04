@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-function Message() {
+const Message = () => {
   return (
     <div>
       <p>{"It's time to learn React!!!"}</p>
