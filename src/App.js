@@ -9,12 +9,30 @@ const Message = () => {
   );
 };
 
+// lets create a class component
+class Welcome extends React.Component {
+  constructor(props) {
+    super(props);
+    this.name = props.name || 'John Doe';
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Hello, {this.name}</h1>
+      </div>
+    );
+  }
+}
+
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Message/>
+        <Message />
+        <Welcome />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
