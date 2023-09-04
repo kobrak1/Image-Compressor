@@ -13,12 +13,13 @@ const Message = () => {
 class Welcome extends React.Component {
   constructor(props) {
     super(props);
-    this.name = props.name || 'John Doe';
+    this.name = props.name;
+    this.age = props.age;
   }
 
   render() {
     return (
-        <p>Welcome, {this.name}</p>
+        <p>Welcome, {this.name}. Your age is {this.age}</p>
     );
   }
 }
